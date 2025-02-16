@@ -76,7 +76,7 @@ Provided a fallback response suggesting valid queries.
 Setup Guide
 1. Install Dependencies
 Ensure you have Python 3.8+ and Rasa installed
-2. Clone the respitory https://github.com/katerinamas/-WeatherChatbot.git
+2. Clone the Repository https://github.com/katerinamas/-WeatherChatbot.git
 3. Set Up API Key
 Get a free API key from OpenWeather and set it in the weather.py (API_key=)
 4. Train the model with Rasa train
