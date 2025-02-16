@@ -1,0 +1,650 @@
+[
+  {
+    "text": "Can you recommend me some songs?",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.673673689365387
+    }
+  },
+  {
+    "text": "Recommend songs for me",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9793905019760132
+    }
+  },
+  {
+    "text": "I need song suggestions",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6063078045845032
+    }
+  },
+  {
+    "text": "Suggest tracks to me",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7001456022262573
+    }
+  },
+  {
+    "text": "Recommend music based on genre",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.38869786262512207
+    }
+  },
+  {
+    "text": "Give me some pop songs",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9440209865570068
+    }
+  },
+  {
+    "text": "I want rock songs",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9546321034431458
+    }
+  },
+  {
+    "text": "Tell me some songs please",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7318246364593506
+    }
+  },
+  {
+    "text": "Can you tell me a good song?",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5235365033149719
+    }
+  },
+  {
+    "text": "What songs should I listen to?",
+    "intent": "request_song_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6319400668144226
+    }
+  },
+  {
+    "text": "I like pop music",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6081470847129822
+    }
+  },
+  {
+    "text": "I prefer rock",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9943332672119141
+    }
+  },
+  {
+    "text": "Play some jazz",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9827553629875183
+    }
+  },
+  {
+    "text": "I like Heavy metal music",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5218039751052856
+    }
+  },
+  {
+    "text": "I want an Indie song",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7798007130622864
+    }
+  },
+  {
+    "text": "I want only pop songs",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7067224979400635
+    }
+  },
+  {
+    "text": "Suggest electronic music",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5968672633171082
+    }
+  },
+  {
+    "text": "I'm into hip hop",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.8982422351837158
+    }
+  },
+  {
+    "text": "I love classical",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5104190111160278
+    }
+  },
+  {
+    "text": "How about some reggae?",
+    "intent": "inform_genre",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6365188360214233
+    }
+  },
+  {
+    "text": "Recommend me a playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9756678938865662
+    }
+  },
+  {
+    "text": "Suggest a playlist for my mood",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.8230712413787842
+    }
+  },
+  {
+    "text": "I need a workout playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9073756337165833
+    }
+  },
+  {
+    "text": "What playlist would suit my mood?",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9704338908195496
+    }
+  },
+  {
+    "text": "Recommend a relaxing playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9971078038215637
+    }
+  },
+  {
+    "text": "I want a good playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.46173328161239624
+    }
+  },
+  {
+    "text": "I would like a big playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9148429036140442
+    }
+  },
+  {
+    "text": "Give me a party playlist",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.2995706796646118
+    }
+  },
+  {
+    "text": "Any good playlists for studying?",
+    "intent": "request_playlist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9964426159858704
+    }
+  },
+  {
+    "text": "I'm feeling happy",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9994797110557556
+    }
+  },
+  {
+    "text": "I'm sad",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I'm in a chill mood",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.48772189021110535
+    }
+  },
+  {
+    "text": "I need something energetic",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.5278618931770325
+    }
+  },
+  {
+    "text": "I’m in a party mood",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4837094247341156
+    }
+  },
+  {
+    "text": "I'm feeling romantic",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.9999862909317017
+    }
+  },
+  {
+    "text": "I want something calming",
+    "intent": "inform_mood",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.5904205441474915
+    }
+  },
+  {
+    "text": "Recommend me an artist",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7917820811271667
+    }
+  },
+  {
+    "text": "I want artists like Chappell Roan",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8455090522766113
+    }
+  },
+  {
+    "text": "Suggest artists based on pop",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9445418119430542
+    }
+  },
+  {
+    "text": "I like Marina Satti, who’s similar?",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7948864698410034
+    }
+  },
+  {
+    "text": "Who’s an artist like Billie Eilish?",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6493700742721558
+    }
+  },
+  {
+    "text": "Can you suggest an artist I’d like?",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.6757614016532898
+    }
+  },
+  {
+    "text": "Recommend artists for rock fans",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8216976523399353
+    }
+  },
+  {
+    "text": "Tell me an artist please",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.43739426136016846
+    }
+  },
+  {
+    "text": "Suggest an artist similar to Drake",
+    "intent": "request_artist_recommendation",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8249438405036926
+    }
+  },
+  {
+    "text": "Miley Cyrus",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6914089918136597
+    }
+  },
+  {
+    "text": "Taylor Swift",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.3408151865005493
+    }
+  },
+  {
+    "text": "Drake",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8304027318954468
+    }
+  },
+  {
+    "text": "Billie Eilish",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8435828685760498
+    }
+  },
+  {
+    "text": "Chappell Roan",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9998996257781982
+    }
+  },
+  {
+    "text": "Ed Sheeran",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.3212563693523407
+    }
+  },
+  {
+    "text": "Imagine Dragons",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3591604232788086
+    }
+  },
+  {
+    "text": "Marina Satti",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.9944993257522583
+    }
+  },
+  {
+    "text": "Harry Styles",
+    "intent": "inform_artist",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9636905193328857
+    }
+  },
+  {
+    "text": "Talk to you soon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9970388412475586
+    }
+  },
+  {
+    "text": "Thanks, I'm done!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9375187158584595
+    }
+  },
+  {
+    "text": "Thanks",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.696259081363678
+    }
+  },
+  {
+    "text": "Thank you",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7381864786148071
+    }
+  },
+  {
+    "text": "Thank u",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9711707830429077
+    }
+  },
+  {
+    "text": "Appreciate it",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.7825437784194946
+    }
+  },
+  {
+    "text": "Thank you very much!",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5286162495613098
+    }
+  },
+  {
+    "text": "Thanks a lot",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9166324734687805
+    }
+  },
+  {
+    "text": "Thanks for the help",
+    "intent": "thank_you",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9025939702987671
+    }
+  },
+  {
+    "text": "Can you help me?",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6852608919143677
+    }
+  },
+  {
+    "text": "How can you assist me?",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8574657440185547
+    }
+  },
+  {
+    "text": "What can you do?",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7536248564720154
+    }
+  },
+  {
+    "text": "I need help",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9290156364440918
+    }
+  },
+  {
+    "text": "Help me with recommendations",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7652602791786194
+    }
+  },
+  {
+    "text": "Yes, recommend me another",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9937883019447327
+    }
+  },
+  {
+    "text": "Give me another song",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.887266218662262
+    }
+  },
+  {
+    "text": "Tell me another song please",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6986936330795288
+    }
+  },
+  {
+    "text": "Show me more",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9866353869438171
+    }
+  },
+  {
+    "text": "I want something else",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6414538621902466
+    }
+  },
+  {
+    "text": "Can I get another suggestion?",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5568377375602722
+    }
+  },
+  {
+    "text": "Yes, suggest more music",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9958457350730896
+    }
+  },
+  {
+    "text": "I’d like another one",
+    "intent": "confirm_recommendation",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9948933124542236
+    }
+  },
+  {
+    "text": "What’s the weather today?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.35463401675224304
+    }
+  },
+  {
+    "text": "Tell me a joke",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.3896115720272064
+    }
+  },
+  {
+    "text": "Who is Donald Trump?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.6851995587348938
+    }
+  },
+  {
+    "text": "What's happening?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9954299926757812
+    }
+  },
+  {
+    "text": "You suck?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9850625991821289
+    }
+  }
+]

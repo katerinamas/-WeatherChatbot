@@ -1,0 +1,91 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: Get Temperature for a City
+  steps:
+  - user: |
+      What's the temperature in New York?
+    intent: ask_temperature
+  - action: action_get_temperature
+
+- story: Get Weather Situation for a City
+  steps:
+  - user: |
+      How's the weather in London?
+    intent: ask_weather_situation
+  - action: action_get_weather_situation
+
+- story: Get Sunrise Time for a City
+  steps:
+  - user: |
+      When does the sun rise in Tokyo?
+    intent: ask_sunrise_time
+  - action: action_get_sunrise_time
+
+- story: Ask Weather Without Providing City
+  steps:
+  - user: |
+      What's the weather like?
+    intent: weather_without_city
+  - action: utter_ask_city
+  - user: |
+      In Los Angeles
+    intent: inform
+  - action: action_get_weather_situation
+
+- story: Respond to "Who Are You?"
+  steps:
+  - user: |
+      Who are you?
+    intent: who_are_you
+  - action: utter_im_rasa
+
+- story: Provide Capabilities of the Bot
+  steps:
+  - user: |
+      What can you do?
+    intent: capabilities
+  - action: utter_capabilities
+
+- story: Handle Irrelevant Questions
+  steps:
+  - user: |
+      What's the meaning of life?
+    intent: irrelevant_question
+  - action: utter_irrelevant
+
+- story: Handle Fallback for Out-of-Scope Questions
+  steps:
+  - user: |
+      Can you dance?
+    intent: out_of_scope
+  - action: action_default_fallback
+
+- story: Provide Help Information
+  steps:
+  - user: |
+      Can you help me?
+    intent: ask_help
+  - action: action_provide_help
+
+- story: Respond to Thank You
+  steps:
+  - user: |
+      Thanks!
+    intent: thank_you
+  - action: action_handle_thank_you
+
+- story: Say Goodbye
+  steps:
+  - user: |
+      Bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: Bot Challenge
+  steps:
+  - user: |
+      Are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot

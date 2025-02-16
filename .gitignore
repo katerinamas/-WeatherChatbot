@@ -1,0 +1,22 @@
+ECHO is on.
+# Ignore virtual environments
+.venv/
+rasa_env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Rasa training data cache
+data/.cache/
+
+# Ignore logs and temporary files
+logs/
+*.log
+
+# Ignore IDE/editor files (VS Code, PyCharm)
+.vscode/
+.idea/
+

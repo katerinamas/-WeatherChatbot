@@ -1,0 +1,93 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - HEY U
+    - hello there
+    - hi there
+    - Hey hey
+    - What's up
+    - Hi!
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - You're awsome, bye!
+    - Bye and thanks!
+    - bye bye
+    - see you later
+    - thanks
+    - thank you
+
+
+#  Scenario 1: User asks for temperature in a city
+- intent: ask_temperature
+  examples: |
+    - What's the temperature in [New York](city)?
+    - How is the temperature in [Paris](city)?
+    - Tell me the current temperature in [Los Angeles](city)
+    - What's the temperature like in [London](city)?
+    - I need to know the temperature in [Athens](city)
+    - How is it in [Chicago](city)?
+    - Please give me the temperature in [Rome](city) today?
+    - Can you give me the temperature in [Berlin](city)?
+
+#  Scenario 2: User asks for weather situation in a city
+- intent: ask_weather_situation
+  examples: |
+    - How's the weather in [Berlin](city)?
+    - What's the weather like in [Chicago](city)?
+    - Tell me the weather in [Los Angeles](city)
+    - What's the forecast for [Paris](city)?
+    - What's the weather situation in [London](city)?
+    - I want to know the weather in [New York](city)?
+    - How is the weather in [Rome](city) today?
+
+#  Scenario 3: User asks for sunrise time in a city
+- intent: ask_sunrise_time
+  examples: |
+    - When is sunrise in [Athens](city)?
+    - What time does the sun rise in [Moscow](city)?
+    - When will the sun rise in [Rome](city)?
+    - Sunrise time in [Berlin](city)?
+    - What time does the sun come up in [Sydney](city)?
+    - When does the sunrise happen in [Paris](city)?
+    - Is sunrise early in [New York](city) today?
+
+#  User asks about the chatbot
+- intent: who_are_you
+  examples: |
+    - who are you?
+    - are you a bot?
+    - are you human?
+    - what are you?
+
+# User asks about the chatbot’s capabilities
+- intent: capabilities
+  examples: |
+    - what can you do?
+    - how do I use this?
+    - what do you do?
+    - information
+    - help
+    - can you help me?
+    - what can you tell me?
+    - help me please
+
+#  Handling Irrelevant Questions (Out of Scope)
+- intent: irrelevant_question
+  examples: |
+    - What is the meaning of life?
+    - What’s your favorite color?
+    - Do you believe in aliens?
+    - What’s 2 + 2?
+    - Can you tell me a joke?
+    - Can you dance?
+    - What's your opinion on cats vs dogs?
+    - What should I eat for dinner?
+    - Do you believe in ghosts?

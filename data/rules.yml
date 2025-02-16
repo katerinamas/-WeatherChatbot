@@ -1,0 +1,51 @@
+version: "3.1"
+
+rules:
+
+#  Greeting Rule (Resets Conversation)
+- rule: greet_rule
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_restart
+
+#  Goodbye Rule (Resets Conversation)
+- rule: bye_rule
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_restart
+
+#  Handle Temperature Requests
+- rule: temperature_rule
+  steps:
+  - intent: ask_temperature
+  - action: action_get_temperature
+
+# Handle Weather Situation Requests
+- rule: weather_situation_rule
+  steps:
+  - intent: ask_weather_situation
+  - action: action_get_weather_situation
+
+#  Handle Sunrise Time Requests
+- rule: sunrise_time_rule
+  steps:
+  - intent: ask_sunrise_time
+  - action: action_get_sunrise_time
+
+# Handle Missing City (Bot Asks for City)
+- rule: ask_city_if_missing
+  condition:
+  - slot_was_set:
+      - city: null
+  steps:
+  - action: utter_ask_city  # Bot asks for city
+  - action: action_get_weather_situation
+
+# Handle Irrelevant Questions (Politely Decline)
+- rule: irrelevant_question_rule
+  steps:
+  - intent: irrelevant_question
+  - action: utter_irrelevant
+

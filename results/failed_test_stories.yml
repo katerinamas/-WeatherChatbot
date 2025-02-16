@@ -1,0 +1,38 @@
+version: "3.1"
+stories:
+- story: Respond to Thank You (.\tests\test_stories.yml)
+  steps:
+  - intent: thank_you  # predicted: goodbye: Thanks!
+  - action: action_handle_thank_you  # predicted: action_default_fallback
+- story: Say Goodbye (.\tests\test_stories.yml)
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_listen  # predicted: action_restart
+- story: Bot Challenge (.\tests\test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: who_are_you: Are you a bot?
+  - action: utter_iamabot  # predicted: action_default_fallback
+- story: Get Temperature for a City (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_temperature  # predicted: ask_temperature: What's the temperature in [New York](city)?
+  - action: action_get_temperature
+- story: Get Weather Situation for a City (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_weather_situation  # predicted: ask_weather_situation: How's the weather in [London](city)?
+  - action: action_get_weather_situation
+- story: Ask Weather Without Providing City (.\tests\test_stories.yml)
+  steps:
+  - intent: weather_without_city  # predicted: ask_weather_situation: What's the weather like?
+  - action: utter_ask_city
+  - action: action_listen  # predicted: action_get_weather_situation
+  - intent: inform  # predicted: ask_weather_situation: In [Los Angeles](city)
+  - action: action_get_weather_situation
+- story: Handle Fallback for Out-of-Scope Questions (.\tests\test_stories.yml)
+  steps:
+  - intent: out_of_scope  # predicted: irrelevant_question: Can you dance?
+  - action: action_default_fallback  # predicted: utter_ask_city
+- story: Provide Help Information (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_help  # predicted: capabilities: Can you help me?
+  - action: action_provide_help  # predicted: action_default_fallback

@@ -1,0 +1,20 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fkppbkFqUWFJalFpbGwsAEzIfug==": "action_get_temperature",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fkppbkFqUWFJalFpLnGnpqSUouggbGwsAkNBBgQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnppYkpFaFF+cWVKaCFJdWxsLANk7Ijs=": "action_get_weather_situation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fnppYkpFaFF+cWVKaCFJdS5yZ6aklWPQSa0UsAIaWSQQ=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohs6goNSe1LDGvJL6wNLUYpLa2NhYAl1UhgQ==": "utter_irrelevant",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohs6goNSe1LDGvJL6wNLUYpLaWgImlJSWpRfEIjUQaGgsALIVCtA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObEgMSkzJ7MkM7W4tjYWALQxHlg=": "utter_capabilities",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObEgMSkzJ7MkM7W4loBRpSUlqUXxKDoImBcLAP0LPRA=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fXJpXlFmcGl+SmZtaWxsLADO8ICM=": "action_get_sunrise_time",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3BChdnB1fXJpXlFmcGl+SmZtaS5xx6aklqNqIMDgWAFvpQrw=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhPCM/PrEoNb4yv7S2NhYAl20eDw==": "utter_im_rasa",
+    "eJyFjMEJgDAMAFfJAE7QVURCkIABm5Y0VaR0dwv67+8OjltbX6Bl4wtpd0kaoH2ASpED/HJKcdbR1sI2GtGhHuA+EpIxPqn2yam6s6FENCo0OW0vX+w6cA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhPDWxJCO1KL48syQjv7QkPjmzpLK2NhYAuL8h6Q==": "city_form",
+    "eJyNjEEKgCAQAL+yD+gFfiViEdlwITXWNQnx7xl1r9sMDDO3PkHbhQ60TjlFA+0BjDaQgVc2zkpxtCWTjIbjUDVQyaonwcrqU1F0rGf/WN4NrknC391yAdhGQIE=": "action_get_weather_situation",
+    "eJytjVEKgCAQRK/iATqBV4lYJLZcKA0dk5DunlF910d/85a3M23ZG1WWwCuZHuKdVuUK5MzMWt0wSQS76qbIoTriKkKrzAaWA2WB9QnUC7b9pfJ0aPBh/qfuhpFBz3sUJHNevy50B9XNZvg=": "action_listen"
+  }
+}

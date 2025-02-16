@@ -1,0 +1,39 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer    # Helps extract structured entities (e.g., city names, dates)
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier    # Main intent & entity classifier
+  epochs: 150    # Increased epochs for better generalization
+  entity_recognition: true
+  constrain_similarities: true
+- name: EntitySynonymMapper
+- name: ResponseSelector    # Handles FAQs & response-based queries
+  epochs: 150
+- name: FallbackClassifier    # Handles low-confidence inputs
+  threshold: 0.4    # Slightly more tolerance before fallback
+  ambiguity_threshold: 0.2
+
+# Configuration for Rasa Core (Dialogue Management)
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+- name: MemoizationPolicy
+  max_history: 6    # Slightly increased history to improve response consistency
+- name: TEDPolicy
+  max_history: 8    # TED model considers longer dialogue context for better decisions
+  epochs: 150    # More epochs for improved accuracy in learning conversation flow
+  constrain_similarities: true
+- name: RulePolicy    # Handles rule-based responses (e.g., greetings, goodbyes)
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: true
+  restrict_rules: false
+
+assistant_id: 20250215-172305-coplanar-pollock

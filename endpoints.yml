@@ -1,0 +1,26 @@
+# This file contains the different endpoints your bot can use.
+
+# Server which runs your custom actions.
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+# Tracker store which is used to store the conversations.
+# By default, conversations are stored in memory.
+# Uncomment and configure one of the options below if you want persistent storage.
+
+# tracker_store:
+#     type: redis
+#     url: localhost
+#     port: 6379
+#     db: 0
+#     password: ""
+#     use_ssl: false
+
+# Event broker which all conversation events should be streamed to.
+# Uncomment and configure if you need real-time message logging.
+# event_broker:
+#   type: pika
+#   url: localhost
+#   username: guest
+#   password: guest
+#   queue: rasa_events

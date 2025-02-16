@@ -1,0 +1,96 @@
+version: "3.1"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+# Intents
+intents:
+  - greet
+  - goodbye
+  - ask_temperature
+  - ask_weather_situation
+  - weather_without_city 
+  - ask_sunrise_time
+  - who_are_you
+  - capabilities
+  - irrelevant_question
+
+# Entities (User Inputs)
+entities:
+  - city  # User's location for weather request
+  - weather_type  # e.g., rain, temperature, wind, sunrise
+
+# Slots (Hold values during conversation)
+slots:
+  city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: city
+
+  weather_type:
+    type: categorical
+    influence_conversation: true
+    values:
+      - temperature
+      - cloud_conditions
+      - wind
+      - rain
+      - uvi
+      - pressure
+      - humid
+      - weather
+      - sunrise
+      - __other__
+    mappings:
+      - type: from_entity
+        entity: weather_type
+
+  requested_slot:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_text
+
+# Bot Responses
+responses:
+  utter_greet:
+    - text: "Hello! 😊 How can I assist you with the weather today?"
+    - text: "Hey there! 🌍 Need a weather update?"
+    - text: "Hi! ☀️ Let me know which city’s forecast you’d like to check."
+
+  utter_goodbye:
+    - text: "Take care! 🌤️ Stay prepared for the weather ahead."
+    - text: "Goodbye! ☔ Let me know if you need another forecast."
+    - text: "See you next time! ⛅ Hope you have clear skies!"
+
+  utter_ask_city:
+    - text: "Which city are you asking about? 🏙️"
+    - text: "I provide forecasts for many locations. Please specify a city. 🌎"
+    - text: "Could you let me know which city you’d like the weather for? 🌍"
+
+  utter_im_rasa:
+    - text: "I’m WeatherBot, your weather assistant. ☁️ I provide weather updates and forecasts."
+    - text: "I'm an chatbot designed to help you with real-time weather updates. 🌦️"
+
+  utter_capabilities:
+    - text: "I can provide weather updates and details like temperature 🌡️, wind 💨, rain 🌧️, and sunrise 🌅 times."
+    - text: "Need to check if it's sunny ☀️, rainy ☔, or windy 💨? I’ve got you covered! Just ask about any city."
+
+  utter_irrelevant:
+    - text: "I focus on weather updates 🌦️. Let me know if you need a forecast!"
+    - text: "I'm sorry but I can't answer that, I only specialize in weather! 😊" 
+    - text: "I'm here to provide weather details. Let me know which city you're interested in! 🏙️"
+
+# Actions (Custom Python logic in actions.py)
+actions:
+  - action_get_temperature
+  - action_get_weather_situation
+  - action_get_sunrise_time
+  - utter_ask_city
+  - utter_goodbye
+  - utter_greet
+  - utter_irrelevant
+
+
