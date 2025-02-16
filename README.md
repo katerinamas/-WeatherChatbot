@@ -1,4 +1,4 @@
-# -WeatherChatbot 🌤️ 🌡️
+# -WeatherChatbot🌤️ 🌡️
 A chatbot built with Rasa 3.1 that provides real-time weather updates, including temperature, weather conditions, and sunrise time for any city using an API from OpenWeatherMap 
 This chatbot specializes in providing real-time weather updates based on user queries. The primary motivation for choosing this domain includes:
 
